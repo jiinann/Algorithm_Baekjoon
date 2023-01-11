@@ -1,6 +1,6 @@
 def solution(cipher, code):
-    ans_list = []
+    ans = ''
     for i in range(len(cipher)):
-        if int(i + 1) % code == 0:
-            ans_list.append(cipher[i])
-    return ''.join(ans_list)
+        if (i + 1) % code == 0:
+            ans += cipher[i]
+    return ans
